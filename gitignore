@@ -1,0 +1,9 @@
+.DS_Store
+.svn
+*~
+.*.swp
+nohup.out
+tags
+npm-debug.log
+!.gitkeep
+.nix-gems

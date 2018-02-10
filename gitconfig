@@ -1,0 +1,26 @@
+[user]
+  name = Dan Sowter
+  email = dan@stacktracehq.com
+[alias]
+  co = checkout
+  b = branch
+  s = status
+  p = pull
+  a = add
+  c = commit
+  ps = push
+  lsc = diff-tree --no-commit-id --name-only -r
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+[core]
+  excludesfile = ~/.gitignore
+  editor = code
+  autocrlf = input
+[apply]
+  whitespace = nowarn
+[format]
+  pretty = %C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset
+[credential]
+	helper = !/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java -Ddebug=false -Djava.net.useSystemProxies=true -jar /usr/local/Cellar/git-credential-manager/2.0.3/libexec/git-credential-manager-2.0.3.jar
