@@ -85,40 +85,76 @@ render_timer: false
 # and cursor.background colors, otherwise invert the colors of the cursor.
 custom_cursor_colors: true
 
-# Base16 Solarized Light 256 - alacritty color config
+# Base16 Solarized Dark 256 - alacritty color config
 # Ethan Schoonover (http://ethanschoonover.com/solarized)
 colors:
   # Default colors
   primary:
-    background: '0xfdf6e3'
-    foreground: '0x586e75'
+    background: '0x002b36'
+    foreground: '0x93a1a1'
 
   # Colors the cursor will use if `custom_cursor_colors` is true
   cursor:
-    text: '0xfdf6e3'
-    cursor: '0x586e75'
+    text: '0x002b36'
+    cursor: '0x93a1a1'
 
   # Normal colors
   normal:
-    black:   '0xfdf6e3'
+    black:   '0x002b36'
     red:     '0xdc322f'
     green:   '0x859900'
     yellow:  '0xb58900'
     blue:    '0x268bd2'
     magenta: '0x6c71c4'
     cyan:    '0x2aa198'
-    white:   '0x586e75'
+    white:   '0x93a1a1'
 
   # Bright colors
   bright:
-    black:   '0x839496'
+    black:   '0x657b83'
     red:     '0xdc322f'
     green:   '0x859900'
     yellow:  '0xb58900'
     blue:    '0x268bd2'
     magenta: '0x6c71c4'
     cyan:    '0x2aa198'
-    white:   '0x586e75'
+    white:   '0x93a1a1'
+
+
+# Base16 Solarized Light 256 - alacritty color config
+# Ethan Schoonover (http://ethanschoonover.com/solarized)
+# colors:
+#   # Default colors
+#   primary:
+#     background: '0xfdf6e3'
+#     foreground: '0x586e75'
+
+#   # Colors the cursor will use if `custom_cursor_colors` is true
+#   cursor:
+#     text: '0xfdf6e3'
+#     cursor: '0x586e75'
+
+#   # Normal colors
+#   normal:
+#     black:   '0xfdf6e3'
+#     red:     '0xdc322f'
+#     green:   '0x859900'
+#     yellow:  '0xb58900'
+#     blue:    '0x268bd2'
+#     magenta: '0x6c71c4'
+#     cyan:    '0x2aa198'
+#     white:   '0x586e75'
+
+#   # Bright colors
+#   bright:
+#     black:   '0x839496'
+#     red:     '0xdc322f'
+#     green:   '0x859900'
+#     yellow:  '0xb58900'
+#     blue:    '0x268bd2'
+#     magenta: '0x6c71c4'
+#     cyan:    '0x2aa198'
+#     white:   '0x586e75'
 
 # Visual Bell
 #
@@ -254,6 +290,9 @@ key_bindings:
   - { key: V,        mods: Command, action: Paste                        }
   - { key: C,        mods: Command, action: Copy                         }
   - { key: Q,        mods: Command, action: Quit                         }
+  - { key: V,        mods: Control|Shift, action: Paste                  }
+  - { key: C,        mods: Control|Shift, action: Copy                   }
+  - { key: Q,        mods: Control|Shift, action: Quit                   }
   - { key: W,        mods: Command, action: Quit                         }
   - { key: Home,                    chars: "\x1bOH",   mode: AppCursor   }
   - { key: Home,                    chars: "\x1b[H",   mode: ~AppCursor  }

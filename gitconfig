@@ -1,6 +1,7 @@
 [user]
   name = Dan Sowter
   email = dan@stacktracehq.com
+	signingkey = 5D89035C094C6207
 [alias]
   co = checkout
   b = branch
@@ -16,7 +17,7 @@
   branch = auto
 [core]
   excludesfile = ~/.gitignore
-  editor = code
+	editor = code --wait
   autocrlf = input
 [apply]
   whitespace = nowarn

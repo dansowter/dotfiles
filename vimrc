@@ -15,7 +15,6 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 Plugin 'airblade/vim-gitgutter'
-Plugin 'flazz/vim-colorschemes'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'kien/ctrlp.vim'
 Plugin 'rking/ag.vim'
@@ -43,7 +42,6 @@ set showcmd		" display incomplete commands
 
 " Switch on highlighting the last used search pattern.
 if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
-  colorscheme solarized
   set hlsearch
 endif
 

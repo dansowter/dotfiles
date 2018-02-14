@@ -10,6 +10,7 @@
 
 fresh freshshell/fresh bin/fresh --bin
 
+fresh config/aws.sh
 fresh config/chruby.sh
 fresh config/clipboard.sh
 fresh config/codecdpath.sh
@@ -18,6 +19,7 @@ fresh config/coreutils.sh
 fresh config/direnv.sh
 fresh config/edhcdpath.sh
 fresh config/editor.sh
+fresh config/git-completion.sh
 fresh config/history.sh
 fresh config/nix.sh
 fresh config/nix-shell.sh
@@ -35,3 +37,4 @@ fresh gitignore --file
 fresh gitconfig --file
 fresh vimrc --file
 fresh tmux.conf --file
+fresh alacritty.yml --file="~/.config/alacritty/alacritty.yml"
