@@ -2,6 +2,7 @@ alias reload=". ~/.bashrc"
 
 alias dc=docker-compose
 alias g=git
+alias gti=git
 alias l='ls -alrt'
 alias ll='ls -l'
 alias ls='ls'
