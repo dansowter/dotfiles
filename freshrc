@@ -10,6 +10,9 @@
 
 fresh freshshell/fresh bin/fresh --bin
 
+fresh config/nix.sh
+fresh config/nix-shell.sh
+
 fresh config/aws.sh
 fresh config/chruby.sh
 fresh config/clipboard.sh
@@ -21,8 +24,6 @@ fresh config/edhcdpath.sh
 fresh config/editor.sh
 fresh config/git-completion.sh
 fresh config/history.sh
-fresh config/nix.sh
-fresh config/nix-shell.sh
 fresh config/nvm.sh
 fresh config/opts.sh
 fresh config/path.sh
@@ -33,6 +34,7 @@ fresh config/title.sh
 fresh config/aliases.sh
 
 fresh bashrc --file
+fresh bash_profile --file
 fresh gitignore --file
 fresh gitconfig --file
 fresh vimrc --file
