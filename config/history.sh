@@ -6,10 +6,12 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+HISTSIZE=
+HISTFILESIZE=
 
 bind '"\e[A":history-search-backward'
 bind '"\e[B":history-search-forward'
 bind '"\e[C": forward-char'
 bind '"\e[D": backward-char'
+
+export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"

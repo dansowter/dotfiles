@@ -7,5 +7,7 @@ alias l='ls -alrt'
 alias ll='ls -l'
 alias ls='ls'
 alias path='echo -e ${PATH//:/\\n}'
+alias fcd='cd $(fd -t d | fzf)'
+alias code='code-insiders'
 
 __git_complete g _git
