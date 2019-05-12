@@ -17,6 +17,7 @@ fresh config/aws.sh
 fresh config/clipboard.sh
 fresh config/codecdpath.sh
 fresh config/completion.sh
+fresh config/conda.sh
 fresh config/coreutils.sh
 fresh config/direnv.sh
 fresh config/editor.sh
