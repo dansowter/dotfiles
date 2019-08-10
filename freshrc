@@ -21,7 +21,6 @@ fresh config/conda.sh
 fresh config/coreutils.sh
 fresh config/direnv.sh
 fresh config/editor.sh
-fresh config/git-completion.sh
 fresh config/history.sh
 fresh config/nvm.sh
 fresh config/opts.sh
