@@ -2,15 +2,6 @@
   name = Dan Sowter
   email = dan@stacktracehq.com
 	signingkey = 5D89035C094C6207
-[alias]
-  co = checkout
-  b = branch
-  s = status
-  p = pull
-  a = add
-  c = commit
-  ps = push
-  lsc = diff-tree --no-commit-id --name-only -r
 [color]
   diff = auto
   status = auto
