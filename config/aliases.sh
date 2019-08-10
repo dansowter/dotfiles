@@ -1,17 +1,21 @@
 alias reload=". ~/.bashrc"
 
+alias cat=bat
 alias dc=docker-compose
+alias ds='git diff --staged'
+alias fcd='cd $(fd -t d | fzf)'
 alias g=git
+alias gs='git status'
 alias gti=git
-alias l='ls -alrt'
-alias ll='ls -l'
+alias l='exa --long --git'
+alias ll='exa --tree --level=2 --long --git --all'
+alias lll='exa --long --git --recurse --all'
 alias ls='ls'
 alias path='echo -e ${PATH//:/\\n}'
-alias fcd='cd $(fd -t d | fzf)'
-alias code='code-insiders'
-alias cat=bat
-
-__git_complete g _git
+alias kt='tmux kill-session'
+alias up='tmux-up tmux-panes.conf'
+alias stopall='docker stop $(docker ps -a -q)'
+alias flushdns='sudo systemd-resolve --flush-caches'
 
 function add() {
     git status -s -u | fzf -m --ansi | cut -c 4- | xargs git add
