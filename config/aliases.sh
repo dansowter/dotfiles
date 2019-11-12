@@ -15,7 +15,10 @@ alias path='echo -e ${PATH//:/\\n}'
 alias kt='tmux kill-session'
 alias up='tmux-up tmux-panes.conf'
 alias stopall='docker stop $(docker ps -a -q)'
+alias removeall='docker rm -f $(docker ps -a -q)'
 alias flushdns='sudo systemd-resolve --flush-caches'
+alias sshadd='askpass.sh | ssh-add -'
+alias gitcomplete='source /usr/share/bash-completion/completions/git'
 
 function add() {
     git status -s -u | fzf -m --ansi | cut -c 4- | xargs git add

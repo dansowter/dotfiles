@@ -39,4 +39,6 @@ fresh gitconfig --file
 fresh vimrc --file
 fresh tmux.conf --file
 fresh alacritty.yml --file="~/.config/alacritty/alacritty.yml"
+fresh starship.toml --file="~/.config/starship.toml"
+fresh askpass.sh --bin
 fresh jamesottaway/tmux-up tmux-up --bin
