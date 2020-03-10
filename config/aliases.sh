@@ -1,35 +1,39 @@
 alias reload=". ~/.bashrc"
 
 alias cat=bat
-alias dc=docker-compose
+alias cl='tput reset'
 alias ds='git diff --staged'
 alias fcd='cd $(fd -t d | fzf)'
+alias flushdns='sudo systemd-resolve --flush-caches'
 alias g=git
+alias gd='git diff'
+alias gitcomplete='source /usr/share/bash-completion/completions/git'
 alias gs='git status'
 alias gti=git
+alias kt='tmux kill-session'
 alias l='exa --long --git'
 alias ll='exa --tree --level=2 --long --git --all'
 alias lll='exa --long --git --recurse --all'
-alias ls='ls'
 alias path='echo -e ${PATH//:/\\n}'
-alias kt='tmux kill-session'
-alias up='tmux-up tmux-panes.conf'
-alias stopall='docker stop $(docker ps -a -q)'
 alias removeall='docker rm -f $(docker ps -a -q)'
-alias flushdns='sudo systemd-resolve --flush-caches'
 alias sshadd='askpass.sh | ssh-add -'
-alias gitcomplete='source /usr/share/bash-completion/completions/git'
+alias stopall='docker stop $(docker ps -a -q)'
+alias up='tmux source tmux-panes.conf'
 
 function add() {
     git status -s -u | fzf -m --ansi | cut -c 4- | xargs git add
 }
 
 function rem() {
-    git status -s -u | fzf -m | cut -c 4- | xargs rm
+    git status -s -u | fzf -m --ansi | cut -c 4- | xargs rm
+}
+
+function prunebranches() {
+    git branch | fzf -m --ansi | xargs git branch -D
 }
 
 function reset() {
-    git status -s -u | fzf -m | cut -c 4- | xargs git reset
+    git status -s -u | fzf -m --ansi | cut -c 4- | xargs git reset
 }
 
 fshow() {
