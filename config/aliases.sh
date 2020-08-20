@@ -19,6 +19,9 @@ alias removeall='docker rm -f $(docker ps -a -q)'
 alias sshadd='askpass.sh | ssh-add -'
 alias stopall='docker stop $(docker ps -a -q)'
 alias up='tmux source tmux-panes.conf'
+alias yubi='ykman oath code arn:aws:iam::195859504095:mfa/dan_sowter | tail -c 7 | pbcopy'
+alias getwayupcode='ykman oath code wayup | tail -c 7 | pbcopy'
+alias dl='docker ps -a --format "{{.Names}}" | fzf | xargs -t docker logs'
 
 function add() {
     git status -s -u | fzf -m --ansi | cut -c 4- | xargs git add
