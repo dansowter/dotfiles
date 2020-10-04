@@ -1,18 +1,55 @@
-add_newline = false
+format = """
+$username\
+$hostname\
+$shlvl\
+$kubernetes\
+$directory\
+$env_var\
+$aws\
+$git_branch\
+$git_commit\
+$git_state\
+$git_status\
+$hg_branch\
+$docker_context\
+$package\
+$cmake\
+$dart\
+$dotnet\
+$elixir\
+$elm\
+$erlang\
+$golang\
+$helm\
+$java\
+$julia\
+$nim\
+$nodejs\
+$ocaml\
+$perl\
+$php\
+$purescript\
+$python\
+$ruby\
+$rust\
+$swift\
+$terraform\
+$zig\
+$nix_shell\
+$conda\
+$memory_usage\
+$gcloud\
+$crystal\
+$cmd_duration\
+$custom\
+$line_break\
+$jobs\
+$battery\
+$time\
+$status\
+$character"""
 
-prompt_order = [
-    "username",
-    "directory",
-    "nix_shell",
-    "python",
-    "git_branch",
-    "git_state",
-    "git_status",
-    "cmd_duration",
-    "jobs",
-    "line_break",
-    "character",
-]
+add_newline = false
 
 [git_status]
 ahead = "↑"
@@ -23,13 +60,28 @@ modified = " "
 untracked = ""
 
 [nix_shell]
-impure_msg = " "
-pure_msg = " "
+symbol = " "
+style = "bold #0C81D6"
+format = "via [$symbol]($style) "
 
 [character]
-symbol = "ﬦ"
-use_symbol_for_status = true
+success_symbol = "[](bold #32B394) "
+error_symbol = "[✗](bold #D93900) "
 
 [python]
 symbol = " "
 pyenv_prefix = ""
+
+[aws]
+format = "(as [$symbol$profile]($style) )"
+style = "bold #0C81D6"
+symbol = " "
+
+[env_var]
+variable = "DANGER_ZONE"
+style = "bold #F38527"
+symbol = "䀹DANGER"
+format = "in [$symbol]($style) "
+
+[dotnet]
+disabled = true

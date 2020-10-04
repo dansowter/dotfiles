@@ -6,15 +6,15 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=
-HISTFILESIZE=
+HISTSIZE=100000
+HISTFILESIZE=1000000
 
 # bind '"\e[A":history-search-backward'
 # bind '"\e[B":history-search-forward'
 # bind '"\e[C": forward-char'
 # bind '"\e[D": backward-char'
 
-export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+export PROMPT_COMMAND="history -a; history -n"
 
 # Another CTRL-R script to insert the selected command from history into the command line/region
 __fzf_history ()
