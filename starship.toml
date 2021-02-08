@@ -52,6 +52,7 @@ $character"""
 add_newline = false
 
 [git_status]
+style =	"bold bright-red"
 ahead = "↑"
 behind = "↓"
 diverged = "⤮ "
@@ -65,8 +66,8 @@ style = "bold #0C81D6"
 format = "via [$symbol]($style) "
 
 [character]
-success_symbol = "[](bold #32B394) "
-error_symbol = "[✗](bold #D93900) "
+success_symbol = "[](bold green) "
+error_symbol = "[✗](bold red) "
 
 [python]
 symbol = " "
@@ -85,3 +86,6 @@ format = "in [$symbol]($style) "
 
 [dotnet]
 disabled = true
+
+[directory]
+style =	"bold bright-red"

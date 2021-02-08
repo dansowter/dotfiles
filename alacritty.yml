@@ -164,38 +164,40 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 #draw_bold_text_with_bright_colors: false
 
-draw_bold_text_with_bright_colors: true
+draw_bold_text_with_bright_colors: false
 
-# Stacktrace Colours.
 colors:
   # Default colors
   primary:
-    background: "0x132039"
-    foreground: "0xf2e5c0"
+    background: '0x292C3E'
+    foreground: '0xEBEBEB'
+
+  # Cursor colors
+  cursor:
+    text: '0xFF261E'
+    cursor: '0xFF261E'
 
   # Normal colors
   normal:
-    black: "0x132039"
-    red: "0xe74c3c"
-    green: "0x2ecc71"
-    yellow: "0xf1c40f"
-    blue: "0x3498db"
-    magenta: "0x9b59b6"
-    cyan: "0x1abc9c"
-    white: "0xf2e5c0"
+    black:   '0x0d0d0d'
+    red:     '0xFF301B'
+    green:   '0xA0E521'
+    yellow:  '0xFFC620'
+    blue:    '0x1BA6FA'
+    magenta: '0x8763B8'
+    cyan:    '0x21DEEF'
+    white:   '0xEBEBEB'
 
   # Bright colors
   bright:
-    black: "0x95a5a6"
-    red: "0xe67e22"
-    green: "0x303a50"
-    yellow: "0x627384"
-    blue: "0xbcbfc2"
-    magenta: "0xf2ecd9"
-    cyan: "0xbe643c"
-    white: "0xf9f5ec"
-
-  indexed_colors: []
+    black:   '0x6D7070'
+    red:     '0xFF4352'
+    green:   '0xB8E466'
+    yellow:  '0xFFD750'
+    blue:    '0x1BA6FA'
+    magenta: '0xA578EA'
+    cyan:    '0x73FBF1'
+    white:   '0xFEFEF8'
 
 # Bell
 #

@@ -45,11 +45,10 @@ function danger() {
 
 function run() {
 cd ~/code/cosmos/scripts
-script=$(fd . -e ts -e sh -t x | fzf)
+script=$(fd . --no-ignore -e ts -e sh -t x | fzf)
 
 cd ~/code/cosmos
 [ -z "$IN_NIX_SHELL" ] && nix-shell
-
 
 if [ ${script: -3} == ".ts" ]
 then
