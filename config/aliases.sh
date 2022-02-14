@@ -11,7 +11,7 @@ alias gitcomplete='source /usr/share/bash-completion/completions/git'
 alias gs='git status'
 alias gti=git
 alias kt='tmux kill-session'
-alias l='exa --long --git'
+alias l='exa --long --git --all'
 alias ll='exa --tree --level=2 --long --git --all'
 alias lll='exa --long --git --recurse --all'
 alias path='echo -e ${PATH//:/\\n}'
