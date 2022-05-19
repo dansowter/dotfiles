@@ -44,21 +44,6 @@ function danger() {
     export DANGER_ZONE=true
 }
 
-function run() {
-cd ~/code/cosmos/scripts
-script=$(fd . --no-ignore -e ts -e sh -t x | fzf)
-
-cd ~/code/cosmos
-[ -z "$IN_NIX_SHELL" ] && nix-shell
-
-if [ ${script: -3} == ".ts" ]
-then
-    echo $script | xargs -p -I "selected" scripts/run selected
-else
-    echo "scripts/"$script | xargs -p bash
-fi
-}
-
 fshow() {
   local out shas sha q k
   while out=$(
