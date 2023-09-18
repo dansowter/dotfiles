@@ -1,5 +1,6 @@
-alias reload=". ~/.bashrc"
+export OP_PLUGIN_ALIASES_SOURCED=1
 
+alias reload=". ~/.bashrc"
 alias cat=bat
 alias cl='tput reset'
 alias ds='git diff --staged'
@@ -23,6 +24,7 @@ alias yubi='ykman oath accounts code arn:aws:iam::195859504095:mfa/dan_sowter | 
 alias egr='ykman oath accounts code egr | tail -c 7 | pbcopy'
 alias getwayupcode='ykman oath accounts code wayup | tail -c 7 | pbcopy'
 alias dl='docker ps -a --format "{{.Names}}" | fzf | xargs -t docker logs'
+alias gh="op plugin run -- gh"
 
 function add() {
     git status -s -u | fzf -m --ansi | cut -c 4- | xargs git add

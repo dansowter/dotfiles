@@ -7,7 +7,7 @@
   status = auto
   branch = auto
 [core]
-  editor = code --wait
+  editor = micro
   autocrlf = input
   excludesfile = ~/.gitignore
   pager = delta
