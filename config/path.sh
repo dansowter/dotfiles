@@ -5,3 +5,4 @@ export PATH="$HOME/.dotfiles/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/npm-global/bin:$PATH"
 export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/usr/local/cuda-12.2/bin
