@@ -24,7 +24,6 @@ fresh config/history.sh
 fresh config/opts.sh
 fresh config/path.sh
 fresh config/prompt.sh
-fresh config/zoxide.sh
 
 fresh config/aliases.sh
 
