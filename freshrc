@@ -34,7 +34,7 @@ fresh gitignore --file
 fresh gitconfig --file
 fresh vimrc --file
 fresh tmux.conf --file
-fresh alacritty.yml --file="~/.config/alacritty/alacritty.yml"
+fresh alacritty.toml --file="~/.config/alacritty/alacritty.toml"
 fresh starship.toml --file="~/.config/starship.toml"
 fresh askpass.sh --bin
 fresh Xresources --file
