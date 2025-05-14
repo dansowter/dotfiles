@@ -36,5 +36,6 @@ fresh vimrc --file
 fresh tmux.conf --file
 fresh alacritty.toml --file="~/.config/alacritty/alacritty.toml"
 fresh starship.toml --file="~/.config/starship.toml"
+fresh nix.conf --file="~/.config/nix.conf"
 fresh askpass.sh --bin
 fresh Xresources --file
